@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: factur-x
-  version: '5.1'
+  version: '6.0'
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 94504e4726aad3a9aeb1dc5da7e417904ec78fe504756c5aa0aa83d2de71322e
+  sha256: 32a893be766e81a245b6a3402f00eb46c23fbfce44005bb8dbb4f552e18fd88c
 
 build:
   number: 0
@@ -29,6 +29,7 @@ requirements:
     - pypdf >=5.3.0
     - lxml
     - python-stdnum
+    - requests
 tests:
   - python:
       imports:
