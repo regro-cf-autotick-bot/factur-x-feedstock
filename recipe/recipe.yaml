@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: factur-x
-  version: "6.5"
+  version: "6.6"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 514dd9dc75894e901311b5d058048d5111faedbfc1d2c2e80d723f4747ea8e2f
+  sha256: 37d07a8f281e397d6eda17f620f871b51132c87a47b5955412007b52fed501e6
 
 build:
   number: 0
